@@ -21,8 +21,7 @@ class Sidebar extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
-            
+          <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
@@ -41,7 +40,6 @@ class Sidebar extends Component {
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
             </li>
-            
           </ul>
         </div>
       </nav>
