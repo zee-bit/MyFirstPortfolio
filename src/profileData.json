@@ -1,0 +1,85 @@
+{
+	"landing": {
+		"firstName": "Zeeshan",
+		"lastName": "Equbal",
+		"phoneNumber": "+91-7079526562",
+		"bio": "Hi! I am Zeeshan Equbal, an Electrical and Electronics Undergraduate from BIT Mesra. A Competitive programmer, Web Developer and Data Science enthusiast who loves to play Badminton. I am a self-motivated guy, eager to learn anything life has to offer. I am always ready to get my hands dirty on technologies that I find rather interesting.",
+    	"email": "equbalzeeshan@gmail.com",
+    	"linkedin": "https://www.linkedin.com/in/zean7",
+		"github": "https://github.com/zee-bit"
+	},
+	"experience": [
+		{
+				"position": "Web Developer",
+				"organization": "IETE BIT Mesra Students' Chapter",
+				"aboutWork": "I am responsible for the front-end as well as back-end development of the website of IETE. I work with HTML, CSS, Bootstrap and React for frontend and JavaScript for backend.",
+				"fromDate": "22 Oct'19",
+				"toDate": "Present"
+		},
+		{
+			"position": "Member",
+			"organization": "Society for Data Science",
+			"aboutWork": "We are a bunch of like minded people who love to mingle and play with data and are eager to contribute to the world of data science. I am a part of the Data Analyst team and I am responsible for Exploratory Data Analysis (EDA).",
+			"fromDate": "5 Feb'20",
+			"toDate": "Present"
+		}
+	],
+	"education": [
+		{
+			"university": "Birla Institute of Technology, Mesra",
+			"degree": "B.Tech in Electrical and Electronics Engineering",
+			"gpa": "GPA : 8.52",
+			"fromDate": "29 July'19",
+			"toDate": "July'23"
+		},
+        {
+            "university": "Motilal Nehru Public School, Jamshedpur",
+			"degree": "High School",
+			"gpa": "94.25%",
+			"fromDate": "March'17",
+			"toDate": "March'19"
+        }
+	],
+	"skills": [
+		{
+			"name": "C++"
+		},
+		{
+			"name": "Python"
+        },
+        {
+			"name": "JavaScript"
+		},
+        {
+			"name": "HTML5"
+        },
+        {
+			"name": "CSS3"
+        },
+        {
+			"name": "Bootstrap"
+        },
+        {
+			"name": "React"
+		},
+		{
+			"name": "OpenCV"
+		}
+			
+	],
+	"interests": {
+		"paragraphOne": "Apart from Web Development, I also love Competitive Programming at ",
+		"paragraphTwo": "When I am outdoors, I love to play Badminton with my friends."
+	},
+	"awards": [
+		{
+			"awardDetail": "Attended Google certified workshop on Machine Learning and Deep Learning."
+		},
+		{
+			"awardDetail": "Stood 1st in OpenCV W/S."
+		},
+		{
+			"awardDetail": "Second runner-up in Pantheon'19."
+		}
+	]
+}
