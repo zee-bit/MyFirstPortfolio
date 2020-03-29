@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "https://zean7.me/",
+=======
+  "homepage": "https://zee-bit.github.io/MyFirstPortfolio/",
+>>>>>>> ef3b102cebe30eca8371535238f2900ced9f3e38
   "name": "portfolio-zee1",
   "version": "0.1.0",
   "private": true,
