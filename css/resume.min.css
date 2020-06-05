@@ -23,13 +23,13 @@
   
   h1,h2,h3,h4,h5,h6 {
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    font-weight: 510;
+    font-weight: 501;
     text-transform: uppercase;
     color: #343a40;
   }
   
   h1 {
-    font-size: 4.7rem;
+    font-size: 4.2rem;
     line-height: 5.5rem;
   }
   
@@ -71,6 +71,19 @@
     height: 3.5rem;
     width: 3.5rem;
     background-color: #495057;
+
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+  }
+
+  .social-icons-twitter {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #00acee;
 
     border-radius: 100%;
     text-align: center;
@@ -171,30 +184,30 @@
     }
   }
   
-  section.resume-section {
-    padding-top: 5rem!important;
-    padding-bottom: 5rem!important;
+  div.resume-section {
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
     max-width: 75rem;
   }
   
-  section.resume-section .resume-item .resume-date {
+  div.resume-section .resume-item .resume-date {
     min-width: none;
   }
   
   @media (min-width:768px) {
-    section.resume-section {
-      min-height: 100vh;
+    div.resume-section {
+      min-height: 55vh;
     }
   
-    section.resume-section .resume-item .resume-date {
+    div.resume-section .resume-item .resume-date {
       min-width: 18rem;
     }
   }
   
   @media (min-width:992px) {
-    section.resume-section {
-      padding-top: 3rem!important;
-      padding-bottom: 3rem!important;
+    div.resume-section {
+      padding-top: 2rem!important;
+      padding-bottom: 2rem!important;
     }
   }
   
