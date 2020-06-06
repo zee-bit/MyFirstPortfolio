@@ -104,6 +104,10 @@
     background-color: #429bb8;
   }
 
+  .padd {
+    padding-left: 0rem;
+  }
+
   .dev-icons {
     font-size: 3rem;
   }
