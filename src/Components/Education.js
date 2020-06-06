@@ -9,9 +9,9 @@ class Education extends Component {
 
   render() {
     return(
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div className="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
         <div className="w-100">
-          <h2 className="mb-5">Education</h2>
+          <h2 className="mb-5 mt-5">Education</h2>
           {
             this.education.map((data, index) => (
               <div key={index} className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -27,7 +27,7 @@ class Education extends Component {
             ))
           }
         </div>
-      </section>
+      </div>
     );
   }
 }

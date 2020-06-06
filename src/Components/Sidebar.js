@@ -12,7 +12,7 @@ class Sidebar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a className="navbar-brand js-scroll-trigger" href="#page-top">
-          <span className="d-block d-lg-none">{this.sidebarData.firstName} {this.sidebarData.lastName}</span>
+          {/* <span className="d-block d-lg-none">{this.sidebarData.firstName} {this.sidebarData.lastName}</span> */}
           <span className="d-none d-lg-block">
             <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={image} alt=""></img>
           </span>
@@ -29,9 +29,6 @@ class Sidebar extends Component {
               <a className="nav-link js-scroll-trigger" href="#experience">Experience</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#education">Education</a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
             <li className="nav-item">
@@ -39,6 +36,9 @@ class Sidebar extends Component {
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link js-scroll-trigger" href="#education">Education</a>
             </li>
           </ul>
         </div>

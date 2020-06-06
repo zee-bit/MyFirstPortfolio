@@ -3,14 +3,24 @@
 		"firstName": "Zeeshan",
 		"lastName": "Equbal",
 		"phoneNumber": "+91-7079526562",
-		"bio": "Hi! I am Zeeshan Equbal, an Electrical and Electronics Undergraduate from BIT Mesra. A Competitive programmer, Web Developer and Data Science enthusiast who loves to play Badminton. I am a self-motivated guy, eager to learn anything life has to offer. I am always ready to get my hands dirty on technologies that I find rather interesting.",
+		"bio": "Hi! I am Zeeshan, an Electrical and Electronics Undergraduate from BIT Mesra. A Competitive programmer, Web Developer and Data Science enthusiast who loves to play Badminton. I am a self-motivated guy, eager to learn anything life has to offer. I am always ready to get my hands dirty on technologies that I find rather interesting.",
     	"email": "equbalzeeshan@gmail.com",
     	"linkedin": "https://www.linkedin.com/in/zean7",
-		"github": "https://github.com/zee-bit"
+		"github": "https://github.com/zee-bit",
+		"twitter": "https://twitter.com/EqubalZeeshan"
 	},
 	"experience": [
 		{
+			"position": "Technical Content Writer",
+			"url": "https://geeksforgeeks.org",
+			"organization": "GeeksforGeeks",
+			"aboutWork": "This is my first three-month long WFH internship where I am responsible for writing technical articles and blogs related to Computer Science, Data Structures and Algorithms in general. I am also responsible for Improving existing articles and adding new contents in them.",
+			"fromDate": "4 June'20",
+			"toDate": "Present"
+		},
+		{
 				"position": "Web Developer",
+				"url": "http://ietebitmesra.live",
 				"organization": "IETE BIT Mesra Students' Chapter",
 				"aboutWork": "I am responsible for the front-end as well as back-end development of the website of IETE. I work with HTML, CSS, Bootstrap and React for frontend and JavaScript for backend.",
 				"fromDate": "22 Oct'19",
@@ -18,6 +28,7 @@
 		},
 		{
 			"position": "Member",
+			"url": "https://www.linkedin.com/company/society-for-data-science-bit-mesra/?originalSubdomain=in",
 			"organization": "Society for Data Science",
 			"aboutWork": "We are a bunch of like minded people who love to mingle and play with data and are eager to contribute to the world of data science. I am a part of the Data Analyst team and I am responsible for Exploratory Data Analysis (EDA).",
 			"fromDate": "5 Feb'20",
@@ -42,36 +53,50 @@
 	],
 	"skills": [
 		{
-			"name": "C++"
+			"icon": ["fab", "cuttlefish"],
+			"name": "C/C++"
 		},
 		{
+			"icon": ["fab", "python"],
 			"name": "Python"
         },
         {
+			"icon": ["fab", "js"],
 			"name": "JavaScript"
 		},
         {
+			"icon": ["fab", "html5"],
 			"name": "HTML5"
         },
         {
+			"icon": ["fab", "css3-alt"],
 			"name": "CSS3"
         },
         {
+			"icon": ["fab", "bootstrap"],
 			"name": "Bootstrap"
         },
         {
+			"icon": ["fab", "react"],
 			"name": "React"
-		},
+		}, 
 		{
-			"name": "OpenCV"
-		}
-			
+			"icon": ["fab", "linux"],
+			"name": "Linux"
+		}	
 	],
 	"interests": {
-		"paragraphOne": "Apart from Web Development, I also love Competitive Programming at ",
-		"paragraphTwo": "When I am outdoors, I love to play Badminton with my friends."
+		"paragraphOne": "Apart from Web Development, I love Competitive Programming at ",
+		"paragraphTwo": "When I am outdoors, I love to play Badminton with my friends.",
+		"paragraphThree": "I am also an avid Rubiks cube solver, and spend the rest of my leisure time trying to figure out new moves to drop my solve time."
 	},
 	"awards": [
+		{
+			"awardDetail": "Attended two months long primer course on Data Science by Summer Analytics club of IIT Guwahati"
+		},
+		{
+			"awardDetail": "Successfully completed Crio.do campus tryout"
+		},
 		{
 			"awardDetail": "Attended Google certified workshop on Machine Learning and Deep Learning."
 		},
@@ -79,7 +104,7 @@
 			"awardDetail": "Stood 1st in OpenCV W/S."
 		},
 		{
-			"awardDetail": "Second runner-up in Pantheon'19."
+			"awardDetail": "Second runner-up in Pantheon'19 (Annual Technical Fest of BIT)."
 		}
 	]
 }

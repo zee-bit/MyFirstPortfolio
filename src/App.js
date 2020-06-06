@@ -7,6 +7,10 @@ import Skills from './Components/Skills';
 import Interests from './Components/Interests';
 import Awards from './Components/Awards';
 import profileData from './profileData';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab, faPython, faHtml5, faCuttlefish, faCss3Alt, faJs, faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faCuttlefish, faPython, faHtml5, faCss3Alt, faJs, faBootstrap, faReact)
 
 class App extends Component {
   constructor(props) {
@@ -30,13 +34,13 @@ class App extends Component {
           <hr className="m-0" />
           <Experience experience={this.state.experience} />
           <hr className="m-0" />
-          <Education education={this.state.education}/>
-          <hr className="m-0" />
           <Skills skills={this.state.skills} />
           <hr className="m-0" />
           <Interests interests={this.state.interests} />
           <hr className="m-0" />
           <Awards awards={this.state.awards} />
+          <hr className="m-0" />
+          <Education education={this.state.education}/>
         </div>
       </div>
     );
