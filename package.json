@@ -22,7 +22,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "aws s3 sync build/ s3://zean7 --acl public-read",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
