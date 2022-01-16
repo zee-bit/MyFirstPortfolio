@@ -8,10 +8,33 @@
  * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */body {
+ */
+  
+  .theme-light {
+    --background-color: #ffffff;
+    --text-color: #696969;
+    --heading-color: #343a40;
+    --hover-color: #429bf7;
+    --accent-color: #429bb8;
+    --hr-color: rgb(0, 0, 0, 0.1);
+  }
+
+  .theme-dark {
+    --background-color: #343a40;
+    --text-color: #bbbbbb;
+    --heading-color: #eeeeee;
+    --hover-color: #13cc13;
+    --accent-color: #13a300;
+    --hr-color: rgb(255, 255, 255, 0.1);
+  }
+ 
+  body {
     font-family: Muli,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     padding-top: 54px;
-    color: #696969;
+    /* color: #696969;
+    background-color: #ffffff; */
+    color: var(--text-color);
+    background-color: var(--background-color);
   }
   
   @media (min-width:992px) {
@@ -25,24 +48,38 @@
     font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     font-weight: 501;
     text-transform: uppercase;
-    color: #343a40;
+    /* color: #343a40; */
+    color: var(--heading-color);
   }
   
   h1 {
-    font-size: 4.2rem;
-    line-height: 5.5rem;
+    font-size: 5.5rem;
+    line-height: 5.9rem;
   }
   
   h2 {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
-  
+
   h3 {
     font-size: 2rem;
   }
   
+  @media (max-width:450px) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 5.0rem;
+    }
+    h2 {
+      font-size: 3.0rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+
   p.lead {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 400;
   }
   
@@ -97,11 +134,15 @@
   }
   
   .social-icons-linkedin:hover {
-    background-color: #429bb8;
+    background-color: #016094;
   }
   
   .social-icons-github:hover {
-    background-color: #429bb8;
+    background-color: #353a3f;
+  }
+
+  .social-icons-twitter:hover {
+    background-color: #23bef1;
   }
 
   .padd {
@@ -117,6 +158,7 @@
   }
   
   #sideNav .navbar-nav .nav-item .nav-link {
+    cursor: pointer;
     font-weight: 800;
     letter-spacing: .05rem;
     text-transform: uppercase;
@@ -152,8 +194,8 @@
     }
   
     #sideNav .navbar-brand .img-profile {
-      max-width: 10rem;
-      max-height: 10rem;
+      max-width: 13rem;
+      max-height: 13rem;
       border: .5rem solid rgba(255,255,255,.2);
     }
   
@@ -188,45 +230,126 @@
     }
   }
   
-  div.resume-section {
+  section.resume-section {
     padding-top: 2rem!important;
     padding-bottom: 2rem!important;
     max-width: 75rem;
   }
   
-  div.resume-section .resume-item .resume-date {
+  section.resume-section .resume-item .resume-date {
     min-width: none;
   }
   
   @media (min-width:768px) {
-    div.resume-section {
-      min-height: 55vh;
+    section.resume-section {
+      min-height: 100vh;
     }
   
-    div.resume-section .resume-item .resume-date {
+    section.resume-section .resume-item .resume-date {
       min-width: 18rem;
     }
   }
   
   @media (min-width:992px) {
-    div.resume-section {
-      padding-top: 2rem!important;
-      padding-bottom: 2rem!important;
+    section.resume-section {
+      padding-top: 3rem!important;
+      padding-bottom: 3rem!important;
     }
   }
   
+  /* @media (max-width:500px) {
+    div.resume-section .name-block {
+      display: flex!important;
+      text-align: center !important;
+    }
+  } */
+
   .bg-primary {
-    background-color: #429bb8!important;
+    /* background-color: #429bb8!important; */
+    background-color: var(--accent-color)!important;
   }
   
   .text-primary {
-    color: #429bb8!important;
+    /* color: #429bb8!important; */
+    color: var(--accent-color)!important;
   }
   
   a {
-    color: #429bb8;
+    /* color: #429bb8; */
+    color: var(--accent-color);
   }
   
   a:active,a:focus,a:hover {
-    color: #429bf7;
+    color: var(--hover-color);
+  }
+
+  .container-toggle {
+    margin-top: 0.5rem;
+  }
+
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    width: 50px;
+    height: 26px;
+    background-color:#343a40;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.2);
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(25px);
+  }
+
+  hr {
+    border: 1px solid var(--hr-color);
+  }
+  
+  @media (min-width:992px) {
+    .resume-sep {
+      width: 75%;
+      border: 1px solid rgba(255,255,255,.2);
+    }
+  }
+
+  .skill-icon {
+    font-size: 1.7em;
+  }
+
+  @media (min-width: 576px) {
+    .skill-icon {
+      font-size: 2em;
+    }
+  }
+
+  @media (min-width: 767px) {
+    .skill-icon {
+      font-size: 2.5em;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .skill-icon {
+      font-size: 3em;
+    }
   }
