@@ -9,7 +9,7 @@ class Interests extends Component {
 
   render() {
     return(
-      <div className="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests" name="education">
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>{this.interests.paragraphOne}<a href="https://www.codechef.com/users/zean_7" target="_blank" rel="noopener noreferrer">Codechef</a>
@@ -18,7 +18,7 @@ class Interests extends Component {
           {/* <p className="mb-2">{this.interests.paragraphTwo}</p>
           <p className="mb-2">{this.interests.paragraphThree}</p> */}
         </div>
-      </div>
+      </section>
     );
   }
 }

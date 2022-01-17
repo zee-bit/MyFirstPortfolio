@@ -10,13 +10,13 @@ class Landing extends Component {
   }
   render() {
     return (
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about" name="about">
         <div className="w-100">
           <h1 className="mb-0 mt-4">{this.landingData.firstName}
             <span className="text-primary">{this.landingData.lastName}</span>
           </h1>
           <div className="subheading mb-5">{this.landingData.phoneNumber} ·
-            <a href="mailto:name@email.com">{this.landingData.email}</a>
+            <a href={"mailto:" + this.landingData.email}>{this.landingData.email}</a>
           </div>
           <p className="lead mb-5">{this.landingData.bio}</p>
           <div className="social-icons-github mb-5">

@@ -12,21 +12,21 @@ class Awards extends Component {
 
   render() {
     return(
-      <div className="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards" name="awards">
         <div className="w-100">
           <h2 className="mb-5">Awards &amp; Certifications</h2>
           <ul className="fa-ul mb-0 ml-0">
           {
             this.awards.map((data, index) => (
-              <li key={index} className = "list-item mb-2">
-                <FontAwesomeIcon icon={faAward} size ="lg" color="#ffc107" />
-                <span className="ml-1"> {data.awardDetail} </span>
+              <li key={index} className = "list-item mb-3">
+                <FontAwesomeIcon icon={faAward} size ="2x" color="#ffc107" />
+                <span className="ml-3 lead" dangerouslySetInnerHTML={{ __html: data.awardDetail}} />
               </li>
             ))
           }
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }

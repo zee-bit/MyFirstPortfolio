@@ -7,9 +7,15 @@ class Experience extends Component {
     this.experience = props.experience;
   }
 
+  renderMarkdown = (markdown) => {
+    var matches = /\[(.+)\]\((https?:\/\/[^\s]+)(?: "(.+)")?\)|(https?:\/\/[^\s]+)/ig.exec(markdown);
+    console.log(matches)
+    return `<a href='abcd.com'>abcd.com</a>`;
+  }
+
   render() {
     return(
-      <div className="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="experience" name="experience">
         <div className="w-100">
           <h2 className="mb-5 mt-2">Experience</h2>
           {
@@ -18,7 +24,10 @@ class Experience extends Component {
                 <div className="resume-content">
                   <h3 className="mb-0">{exp.position}</h3>
                   <div className="subheading mb-3"><a href = {exp.url}>{exp.organization}</a></div>
-                  <p>{exp.aboutWork}</p>
+                  {/* <p className='insert'>
+                    {this.renderMarkdown(exp.aboutWork)}
+                  </p> */}
+                  <p dangerouslySetInnerHTML={{ __html: exp.aboutWork }}/>
                 </div>
                 <div className="resume-date text-md-right">
                   <span className="text-primary">{exp.fromDate} - {exp.toDate}</span>
@@ -27,7 +36,7 @@ class Experience extends Component {
             ))
           }
         </div>
-      </div>
+      </section>
     );
   }
 }
