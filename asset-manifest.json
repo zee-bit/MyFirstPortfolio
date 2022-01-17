@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/MyFirstPortfolio/static/css/main.69eda509.chunk.css",
-    "main.js": "/MyFirstPortfolio/static/js/main.fd5eb579.chunk.js",
-    "main.js.map": "/MyFirstPortfolio/static/js/main.fd5eb579.chunk.js.map",
-    "runtime-main.js": "/MyFirstPortfolio/static/js/runtime-main.25f90b35.js",
-    "runtime-main.js.map": "/MyFirstPortfolio/static/js/runtime-main.25f90b35.js.map",
-    "static/js/2.3d22f047.chunk.js": "/MyFirstPortfolio/static/js/2.3d22f047.chunk.js",
-    "static/js/2.3d22f047.chunk.js.map": "/MyFirstPortfolio/static/js/2.3d22f047.chunk.js.map",
-    "index.html": "/MyFirstPortfolio/index.html",
-    "precache-manifest.49707c76c60645830f1d5c7bdd5f5361.js": "/MyFirstPortfolio/precache-manifest.49707c76c60645830f1d5c7bdd5f5361.js",
-    "service-worker.js": "/MyFirstPortfolio/service-worker.js",
-    "static/css/main.69eda509.chunk.css.map": "/MyFirstPortfolio/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.3d22f047.chunk.js.LICENSE.txt": "/MyFirstPortfolio/static/js/2.3d22f047.chunk.js.LICENSE.txt",
-    "static/media/my-passport-photo.jpg": "/MyFirstPortfolio/static/media/my-passport-photo.00fcd6a6.jpg"
+    "main.css": "/static/css/main.69eda509.chunk.css",
+    "main.js": "/static/js/main.84fc071a.chunk.js",
+    "main.js.map": "/static/js/main.84fc071a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a9d56de4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a9d56de4.js.map",
+    "static/js/2.3d22f047.chunk.js": "/static/js/2.3d22f047.chunk.js",
+    "static/js/2.3d22f047.chunk.js.map": "/static/js/2.3d22f047.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d9971e047a5eebe497b8f64e2ffdfcaf.js": "/precache-manifest.d9971e047a5eebe497b8f64e2ffdfcaf.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.69eda509.chunk.css.map": "/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.3d22f047.chunk.js.LICENSE.txt": "/static/js/2.3d22f047.chunk.js.LICENSE.txt",
+    "static/media/my-passport-photo.jpg": "/static/media/my-passport-photo.00fcd6a6.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.25f90b35.js",
+    "static/js/runtime-main.a9d56de4.js",
     "static/js/2.3d22f047.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.fd5eb579.chunk.js"
+    "static/js/main.84fc071a.chunk.js"
   ]
 }
